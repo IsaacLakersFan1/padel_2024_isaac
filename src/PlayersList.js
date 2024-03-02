@@ -42,7 +42,7 @@ function PlayersList({ players, togglePlayerActive }) {
       <ul>
         {players.filter(player => player.active).map(player => (
           <li key={player.id} className="flex items-center justify-between p-2">
-            <div className="flex items-center">s
+            <div className="flex items-center">
               <img src={`/images/${player.name}.jpeg`} alt={player.name} className="w-10 h-10 rounded-full mr-3" onError={(e) => e.target.src = `${process.env.PUBLIC_URL}/images/default.jpeg`}/>
               <span>{player.name}</span>
             </div>
