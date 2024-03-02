@@ -42,8 +42,8 @@ function PlayersList({ players, togglePlayerActive }) {
       <ul>
         {players.filter(player => player.active).map(player => (
           <li key={player.id} className="flex items-center justify-between p-2">
-            <div className="flex items-center">
-              <img src={`/images/${player.name.replace(/\s/g, '').toLowerCase()}.jpeg`} alt={player.name} className="w-10 h-10 rounded-full mr-3" onError={(e) => e.target.src = `${process.env.PUBLIC_URL}/images/default.jpeg`}/>
+            <div className="flex items-center">s
+              <img src={`/images/${player.name}.jpeg`} alt={player.name} className="w-10 h-10 rounded-full mr-3" onError={(e) => e.target.src = `${process.env.PUBLIC_URL}/images/default.jpeg`}/>
               <span>{player.name}</span>
             </div>
             <button onClick={() => togglePlayerActive(player.id)} className="ml-2 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
