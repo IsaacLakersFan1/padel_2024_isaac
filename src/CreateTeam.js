@@ -38,7 +38,7 @@ function CreateTeam({ activePlayers }) {
             <div className="flex justify-center">
               {team.map(player => (
                 <div key={player.id} className="flex flex-col items-center m-2">
-                  <img src={`${process.env.PUBLIC_URL}/images/${player.name.replace(/\s/g, '').toLowerCase()}.jpeg`} alt={player.name} className="w-40 h-40 rounded-full mb-2" />
+                  <img src={`/images/${player.name}.jpeg`} alt={player.name} className="w-40 h-40 rounded-full mb-2" />
                   <p>{player.name}</p>
                 </div>
               ))}
